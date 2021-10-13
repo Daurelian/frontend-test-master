@@ -18,7 +18,7 @@ function App() {
             <h5 class="filterSubTitle"> Casa </h5>
             <h5 class="filterSubTitle"> Acqua </h5>
           </ol>
-          <hr size="2"></hr>
+          <hr size="3"></hr>
           <div>
             <h5 class="filterTitle">SCEGLI PER</h5>
             <h5 class="filterSubTitle"> Disponibili </h5>
