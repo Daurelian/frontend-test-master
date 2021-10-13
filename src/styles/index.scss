@@ -17,6 +17,111 @@ h3 {
   font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
 }
 
+.container {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 30px;
+}
+
 // Filter
 
 //Cards
+
+img {
+  width: 291px;
+  height: 180px;
+  background-color: #00000008;
+  opacity: 1;
+}
+.card_product {
+  position: relative;
+}
+.prefer_product {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color: #00000033;
+  opacity: 1;
+}
+
+.alert_product {
+  background-color: #fd6600;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  border-radius: 0px 3px 3px 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font: normal normal 900 12px/15px Avenir;
+}
+
+.title_product {
+  text-align: left;
+  font: normal normal 900 12px/15px Avenir;
+  letter-spacing: 0.6px;
+  color: #000000;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.description_product {
+  text-align: left;
+  font: normal normal normal 15px/20px Avenir;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-bottom: 0px;
+}
+
+.price_product {
+  text-align: left;
+  font: normal normal 900 20px/22px Avenir;
+  letter-spacing: 0px;
+  color: #fd6600;
+  opacity: 1;
+}
+
+.sale_product {
+  text-align: left;
+  font: normal normal 900 12px/15px Avenir;
+  letter-spacing: 0px;
+  color: #0000004d;
+  opacity: 1;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.icon {
+  text-align: left;
+}
+.icon_product {
+  color: #461e7d;
+  font-size: 10px;
+  opacity: 1;
+  padding-top: 0;
+  padding-right: 5px;
+}
+
+.information_product {
+  text-align: left;
+  font: normal normal 900 12px/25px Avenir;
+  letter-spacing: 0px;
+  color: #fd6600;
+  opacity: 1;
+}
+
+.divisor_product {
+  margin: 0px;
+  padding: 0px;
+}
+
+.confront {
+  text-align: right;
+  font: normal normal 900 12px/25px Avenir;
+  letter-spacing: 0.6px;
+  color: #0000004d;
+  opacity: 1;
+  margin-left: 100px;
+}

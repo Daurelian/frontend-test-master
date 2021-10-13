@@ -7,42 +7,85 @@ function App() {
           {/* Filtro */}
           <label>CATEGORIE</label>
           <p>Riscaldamento</p>
-            <ol>
+          <ol>
             <p> Casa e acqua </p>
             <p> Casa </p>
             <p> Acqua </p>
-            </ol>
+          </ol>
           <hr size="2"></hr>
           <div>
             <label>SCEGLI PER</label>
             <p> Disponibili </p>
-            <p> In promozione </p> 
+            <p> In promozione </p>
             <label>MARCHE</label>
             <p> Ariston </p>
-            <p> Baxi </p> 
+            <p> Baxi </p>
             <p> Ariston </p>
             <label>TIPOLOGIA</label>
             <p> A Condensazione </p>
-            <p> Camera Aperta </p> 
+            <p> Camera Aperta </p>
             <p> Camera Stagna </p>
             <label>ALIMENTAZIONE</label>
             <p> Elettrica </p>
-            <p> Metano </p> 
+            <p> Metano </p>
             <label>POTENZA NOMINALE(kW)</label>
             <p> 19.5 </p>
-            <p> 24 </p> 
-            <p> 25 </p> 
-            <p> da </p> 
-            </div>
+            <p> 24 </p>
+            <p> 25 </p>
+            <p> da </p>
+          </div>
         </div>
         <div className="col-8">
           <div className="row">
             {/* Card */}
-            <div className="col-4">
+            <div className="col-4 card_product">
               <img src={boiler} alt="Boiler_Image" />
+              <i class="far fa-heart prefer_product"></i>
+              <span className="alert_product">Risparmi il 20%</span>
+              <h5 className="title_product">Ariston</h5>
+              <p className="description_product">
+                Matis condens - Condensing Boiler 24 kW Methane - Indoor
+              </p>
+              <span className="price_product">1.350,00 €</span>
+              <span className="sale_product"> 1.570 €</span>
+              <h6 className="information_product">
+                Sopralluogo e installazione inclusi
+              </h6>
+              <hr class="divisor_product"></hr>
+              <span class="icon">
+                <i class="fas fa-star icon_product"></i>
+                <i class="fas fa-star icon_product"></i>
+                <i class="fas fa-star icon_product"></i>
+                <i class="fas fa-star icon_product"></i>
+                <i class="far fa-star icon_product"></i>
+              </span>
+              <span className="confront">CONFRONTA</span>
             </div>
-            <div className="col-4"></div>
-            <div className="col-4">
+            <div className="col-4 card_product">
+              <img src={boiler} alt="Boiler_Image" />
+              <i class="far fa-heart prefer_product"></i>
+              <span className="alert_product">Risparmi il 20%</span>
+              <h5 className="title_product">Ariston</h5>
+              <p className="description_product">
+                Matis condens - Condensing Boiler 24 kW Methane - Indoor
+              </p>
+              <span className="price_product">1.350,00 €</span>
+              <span className="sale_product"> 1.570 €</span>
+              <h6 className="information_product">
+                Sopralluogo e installazione inclusi
+              </h6>
+              <hr class="divisor_product"></hr>
+              <span class="icon">
+                <i class="fas fa-star icon_product"></i>
+                <i class="fas fa-star icon_product"></i>
+                <i class="fas fa-star icon_product"></i>
+                <i class="fas fa-star icon_product"></i>
+                <i class="far fa-star icon_product"></i>
+              </span>
+              <span className="confront">CONFRONTA</span>
+            </div>
+            <div className="col-4 card_product">
+              <img src={boiler} alt="Boiler_Image" />
               <i class="fas fa-star"></i>
               <i class="fas fa-heart"></i>
               <p>Test font Avenir</p>
@@ -66,5 +109,3 @@ function App() {
 }
 
 export default App;
-
-
