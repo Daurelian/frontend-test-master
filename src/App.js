@@ -11,6 +11,7 @@ function App() {
             <p> Casa e acqua </p>
             <p> Casa </p>
             <p> Acqua </p>
+            </ol>
           <hr size="2"></hr>
           <div>
             <label>SCEGLI PER</label>
@@ -33,7 +34,6 @@ function App() {
             <p> 25 </p> 
             <p> da </p> 
             </div>
-            </ol>
         </div>
         <div className="col-8">
           <div className="row">
