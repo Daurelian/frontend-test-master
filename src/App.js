@@ -4,8 +4,18 @@ function App() {
       <div className="row">
         <div className="col-4">
           {/* Filtro */}
-          <p>Testo Filtro</p>
-          <li>Riscaldamento</li>
+
+          <div>
+          <label>CATEGORIE</label>
+          <p>Riscaldamento
+            <ol>
+            <p> Casa e acqua </p>
+            <p> Casa </p>
+            <p> Acqua </p>
+            </ol>
+          </p>
+          </div>
+          
         </div>
         <div className="col-8">
           <div className="row">
