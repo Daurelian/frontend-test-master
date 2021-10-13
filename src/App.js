@@ -5,6 +5,7 @@ function App() {
         <div className="col-4">
           {/* Filtro */}
           <p>Testo Filtro</p>
+          <li>Riscaldamento</li>
         </div>
         <div className="col-8">
           <div className="row">
