@@ -6,36 +6,46 @@ function App() {
         <div className="col-4">
           {/* Filtro */}
           <p class="filterTitle">CATEGORIE</p>
-          <h5>Riscaldamento</h5>
+          <h5 class="filterSubTitle">Riscaldamento</h5>
             <ol>
-            <h5 class="checkmark"> Casa e acqua </h5>
-            <h5> Casa </h5>
-            <h5> Acqua </h5>
+            <h5 class="filterSubTitle" >Casa e acqua </h5>
+            <h5 class="filterSubTitle"> Casa </h5>
+            <h5 class="filterSubTitle"> Acqua </h5>
             </ol>
           <hr size="2"></hr>
           <div>
             <h5 class="filterTitle" >SCEGLI PER</h5>
-            <h5> Disponibili </h5>
-            <h5> In promozione </h5> 
+            <h5 class="filterSubTitle"> Disponibili </h5>
+            <h5 class="filterSubTitle"> In promozione </h5> 
             <h5 class="filterTitle" >MARCHE</h5>
-            <h5> Ariston </h5>
-            <h5> Baxi </h5> 
-            <h5> Ariston </h5>
+            <h5 class="filterSubTitle"> Ariston </h5>
+            <h5 class="filterSubTitle"> Baxi </h5> 
+            <h5 class="filterSubTitle"> Ariston </h5>
             <h5 class="filterTitle">TIPOLOGIA</h5>
-            <h5> A Condensazione </h5>
-            <h5> Camera Aperta </h5> 
-            <h5> Camera Stagna </h5>
+            <h5 class="filterSubTitle"> A Condensazione </h5>
+            <h5 class="filterSubTitle"> Camera Aperta </h5> 
+            <h5 class="filterSubTitle"> Camera Stagna </h5>
             <h5 class="filterTitle">ALIMENTAZIONE</h5>
-            <h5> Elettrica </h5>
-            <h5> Metano </h5> 
+            <h5 class="filterSubTitle"> Elettrica </h5>
+            <h5 class="filterSubTitle"> Metano </h5> 
+            <h5 class="filterTitle">Utilizzo</h5>
+            <h5 class="filterSubTitle"> Esterno</h5>
+            <h5 class="filterSubTitle"> Interno </h5> 
+            <h5 class="filterSubTitle"> Interno/Esterno </h5> 
             <h5 class="filterTitle">POTENZA NOMINALE(kW)</h5>
-            <h5> 19.5 </h5>
-            <h5> 24 </h5> 
-            <h5> 25 </h5> 
-            <h5> da </h5> 
+            <h5 class="filterSubTitle"> 19.5 </h5>
+            <h5 class="filterSubTitle"> 24 </h5> 
+            <h5 class="filterSubTitle"> 25 </h5> 
+            <h5 class="filterSubTitle"> da 30 a 34</h5> 
             <h5 class="filterTitle">RECENSIONI</h5>
              <div>
-          <i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>
+               <span>
+          <i class='fas fa-star'></i>
+          <i class='fas fa-star'></i>
+          <i class='fas fa-star'></i>
+          <i class='fas fa-star'></i>
+          <i class='fas fa-star'></i>
+          </span>
         </div>
             </div>
         </div>
