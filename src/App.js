@@ -4,17 +4,13 @@ function App() {
       <div className="row">
         <div className="col-4">
           {/* Filtro */}
-
-          <div>
           <label>CATEGORIE</label>
-          <p>Riscaldamento
+          <p>Riscaldamento</p>
             <ol>
             <p> Casa e acqua </p>
             <p> Casa </p>
             <p> Acqua </p>
-            </ol>
-          </p>
-          <hr size="3"></hr>
+          <hr size="2"></hr>
           <div>
             <label>SCEGLI PER</label>
             <p> Disponibili </p>
@@ -35,8 +31,8 @@ function App() {
             <p> 24 </p> 
             <p> 25 </p> 
             <p> da </p> 
-</div>s
-          </div>
+            </div>
+            </ol>
         </div>
         <div className="col-8">
           <div className="row">
@@ -63,11 +59,11 @@ function App() {
           <p>Test font Avenir</p>
           <h3>Test font Avenir Black</h3>
         </div> */}
-
+      </div>
+    </div>
   );
 }
 
 export default App;
-
 
 
