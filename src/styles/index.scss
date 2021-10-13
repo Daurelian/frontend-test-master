@@ -23,6 +23,12 @@ h3 {
   margin-top: 30px;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 // Filter
 
 //Cards
@@ -47,13 +53,15 @@ img {
 .alert_product {
   background-color: #fd6600;
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 13px;
   border-radius: 0px 3px 3px 0px;
   opacity: 1;
   letter-spacing: 0px;
   color: #ffffff;
   font: normal normal 900 12px/15px Avenir;
+  padding: 5px 10px;
+  text-align: left;
 }
 
 .title_product {
@@ -64,6 +72,7 @@ img {
   opacity: 1;
   margin-top: 10px;
   margin-bottom: 0px;
+  font-weight: bold;
 }
 
 .description_product {
