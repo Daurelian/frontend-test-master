@@ -247,10 +247,10 @@ img {
 }
 
 /* On mouse-over, add a grey background color */
-.container_filter:hover input ~ .checkmark {
-  background-color: rgb(128, 128, 128);
-  z-index: 20;
-}
+//.checkmark:hover input ~ .checkmark {
+//  background-color: rgb(128, 128, 128);
+ // z-index: 20;
+//}
 
 /* When the checkbox is checked, add a blue background */
 .container_filter input:checked ~ .checkmark {
