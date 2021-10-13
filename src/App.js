@@ -1,3 +1,4 @@
+import boiler from "./images/boiler.png";
 function App() {
   return (
     <div className="container">
@@ -10,12 +11,12 @@ function App() {
           <div className="row">
             {/* Card */}
             <div className="col-4">
-              <i class="fas fa-heart"></i>
+              <img src={boiler} alt="Boiler_Image" />
             </div>
+            <div className="col-4"></div>
             <div className="col-4">
               <i class="fas fa-star"></i>
-            </div>
-            <div className="col-4">
+              <i class="fas fa-heart"></i>
               <p>Test font Avenir</p>
               <h3>Test font Avenir Black</h3>
             </div>
