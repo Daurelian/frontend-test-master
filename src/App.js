@@ -5,34 +5,38 @@ function App() {
       <div className="row">
         <div className="col-4">
           {/* Filtro */}
-          <label>CATEGORIE</label>
-          <p>Riscaldamento</p>
+          <p class="filterTitle">CATEGORIE</p>
+          <h5>Riscaldamento</h5>
             <ol>
-            <p> Casa e acqua </p>
-            <p> Casa </p>
-            <p> Acqua </p>
+            <h5 class="checkmark"> Casa e acqua </h5>
+            <h5> Casa </h5>
+            <h5> Acqua </h5>
             </ol>
           <hr size="2"></hr>
           <div>
-            <label>SCEGLI PER</label>
-            <p> Disponibili </p>
-            <p> In promozione </p> 
-            <label>MARCHE</label>
-            <p> Ariston </p>
-            <p> Baxi </p> 
-            <p> Ariston </p>
-            <label>TIPOLOGIA</label>
-            <p> A Condensazione </p>
-            <p> Camera Aperta </p> 
-            <p> Camera Stagna </p>
-            <label>ALIMENTAZIONE</label>
-            <p> Elettrica </p>
-            <p> Metano </p> 
-            <label>POTENZA NOMINALE(kW)</label>
-            <p> 19.5 </p>
-            <p> 24 </p> 
-            <p> 25 </p> 
-            <p> da </p> 
+            <h5 class="filterTitle" >SCEGLI PER</h5>
+            <h5> Disponibili </h5>
+            <h5> In promozione </h5> 
+            <h5 class="filterTitle" >MARCHE</h5>
+            <h5> Ariston </h5>
+            <h5> Baxi </h5> 
+            <h5> Ariston </h5>
+            <h5 class="filterTitle">TIPOLOGIA</h5>
+            <h5> A Condensazione </h5>
+            <h5> Camera Aperta </h5> 
+            <h5> Camera Stagna </h5>
+            <h5 class="filterTitle">ALIMENTAZIONE</h5>
+            <h5> Elettrica </h5>
+            <h5> Metano </h5> 
+            <h5 class="filterTitle">POTENZA NOMINALE(kW)</h5>
+            <h5> 19.5 </h5>
+            <h5> 24 </h5> 
+            <h5> 25 </h5> 
+            <h5> da </h5> 
+            <h5 class="filterTitle">RECENSIONI</h5>
+             <div>
+          <i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>
+        </div>
             </div>
         </div>
         <div className="col-8">
