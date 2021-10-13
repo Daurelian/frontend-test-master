@@ -18,7 +18,7 @@ function App() {
             <h5 class="filterSubTitle"> Disponibili </h5>
             <h5 class="filterSubTitle"> In promozione </h5> 
             <h5 class="filterTitle" >MARCHE</h5>
-            <h5 class="filterSubTitle"> Ariston </h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox" ></input> <span class="checkmark"></span> Ariston </h5>
             <h5 class="filterSubTitle"> Baxi </h5> 
             <h5 class="filterSubTitle"> Ariston </h5>
             <h5 class="filterTitle">TIPOLOGIA</h5>
