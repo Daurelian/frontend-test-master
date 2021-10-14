@@ -111,6 +111,10 @@ img {
   font-weight: bold;
 }
 
+.fa-star {
+  padding-right: 2px;
+}
+
 .description_product {
   text-align: left;
   font: normal normal normal 15px/20px Avenir;
@@ -249,7 +253,7 @@ img {
 /* On mouse-over, add a grey background color */
 //.checkmark:hover input ~ .checkmark {
 //  background-color: rgb(128, 128, 128);
- // z-index: 20;
+// z-index: 20;
 //}
 
 /* When the checkbox is checked, add a blue background */
