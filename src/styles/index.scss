@@ -37,6 +37,9 @@ h3 {
 .purple {
   color: $complementary;
 }
+.darkPurple {
+  color: $primary;
+}
 
 .filterTitle {
   text-align: left;
@@ -60,8 +63,9 @@ h3 {
 }
 
 .star-distance {
-  padding-bottom: 0;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1em;
 }
 //Cards
 
@@ -227,7 +231,6 @@ img {
 //CSSCheckBox
 
 .container_filter {
-  display: block;
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;

@@ -51,41 +51,71 @@ function App() {
             <h5 class="filterTitle">RECENSIONI</h5>
             <div>
 
-              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"> </i>
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i><span>(3)</span>
-              </p>
-              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i><span>(3)</span>
-              </p>
-              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i><span>(3)</span>
-              </p>
-              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
-                <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i><span>(3)</span>
-              </p>
-              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
-                <i class="fas fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i><span>(3)</span>
-              </p>
+              <div class="star-distance container_filter"> 
+              <div>
+                <input type="checkbox"></input> <span class="checkmark"></span> 
+                </div>
+                <div>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="fas fa-star star-filter darkPurple"> </i>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                </div>
+                <span>(3)</span>
+              </div>
+              <div class="star-distance container_filter">
+                <div> 
+                  <input type="checkbox"></input> <span class="checkmark"></span> 
+                  </div>
+              <div>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="fas fa-star star-filter darkPurple" ></i>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                </div>
+                <span>(3)</span>
+              </div>
+              <div class="star-distance container_filter"> 
+              <div>
+                 <input type="checkbox"></input> <span class="checkmark"></span> 
+                 </div>
+              <div>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                </div>
+                <span>(3)</span>
+              </div>
+              <div class="star-distance container_filter"> 
+              <div>
+                <input type="checkbox"></input> <span class="checkmark"></span> 
+                </div>
+              <div>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                </div>
+                <span>(3)</span>
+              </div>
+              <div class="star-distance">
+                 <div class="container_filter"> 
+                   <input type="checkbox"></input> <span class="checkmark"></span>
+                    </div>
+              <div>
+                <i class="fas fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                <i class="far fa-star star-filter darkPurple"></i>
+                </div>
+                <span>(3)</span>
+              </div>
             </div>
           </div>
         </div>
