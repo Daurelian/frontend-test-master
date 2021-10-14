@@ -10,7 +10,7 @@ $white: #ffffff;
 // CSS BELOW
 body {
   background-color: $white;
-  font-family: "Avenir-Light", Arial, Helvetica, sans-serif;
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -48,8 +48,17 @@ h3 {
 .filterSubTitle {
   font-size: 15px;
   line-height: 1em;
+  padding-top: 3px;
 }
 
+.star-filter {
+  padding-right: 4px;
+  font-size: 14px;
+}
+
+.star-distance {
+  margin: 0;
+}
 //Cards
 
 .order_for {
@@ -109,10 +118,6 @@ img {
   margin-top: 10px;
   margin-bottom: 0px;
   font-weight: bold;
-}
-
-.fa-star {
-  padding-right: 2px;
 }
 
 .description_product {
