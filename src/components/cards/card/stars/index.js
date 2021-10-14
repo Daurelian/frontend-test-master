@@ -2,10 +2,11 @@ import React from "react";
 
 export default function Stars({ stelle }) {
   return [...Array(5)].map((el, index) => {
-    if (index < stelle) {
-      return <i key={index} class="fas fa-star icon_product"></i>;
-    }
-    return <i key={index} class="far fa-star icon_product"></i>;
+    return index < stelle ? (
+      <i key={index} class="fas fa-star icon_product"></i>
+    ) : (
+      <i key={index} class="far fa-star icon_product"></i>
+    );
   });
 
   // switch (stelle) {
