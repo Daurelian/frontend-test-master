@@ -76,7 +76,7 @@ function App() {
                 Sopralluogo e installazione inclusi
               </h6>
               <hr class="divisor_product"></hr>
-              <span class="icon">
+              <span class="icon_span">
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
@@ -150,7 +150,21 @@ function App() {
                 <i class="fas fa-angle-left page_icon_prev"></i>Prev
               </span>
             </div>
-            <div className="col-4"></div>
+            <div className="col-4">
+              <ul className="ul_footer">
+                <li className="li_footer">
+                  <a class="active" href="#home">
+                    1
+                  </a>
+                </li>
+                <li className="li_footer">
+                  <a href="#news">2</a>
+                </li>
+                <li className="li_footer">
+                  <a href="#contact">3</a>
+                </li>
+              </ul>
+            </div>
             <div className="col-4">
               <span className="page_next">
                 Next<i class="fas fa-angle-right page_icon_next"></i>
