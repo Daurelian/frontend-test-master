@@ -160,6 +160,10 @@ img {
   margin-left: 5px;
 }
 
+.under_product {
+  display: flex;
+}
+
 .icon_span {
   text-align: left;
 }
@@ -192,7 +196,8 @@ img {
   letter-spacing: 0.6px;
   color: #0000004d;
   opacity: 1;
-  margin-left: 90px;
+  margin-left: 80px;
+  padding-top: 5px;
 }
 
 //Footer
