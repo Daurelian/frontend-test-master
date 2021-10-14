@@ -9,7 +9,7 @@ function App() {
         </h5>
       </div>
       <div className="row">
-        <div className="col-2 filter">
+        <div className="col-3 filter">
           {/* Filtro */}
           <p class="filterTitle">CATEGORIE</p>
           <h5 class="filterSubTitle">Riscaldamento</h5>
@@ -59,7 +59,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="col-10 product">
+        <div className="col-9 product">
           <div className="row">
             {/* Card */}
             <div className="col-4 card_product">
@@ -152,17 +152,15 @@ function App() {
             </div>
             <div className="col-4">
               <ul className="ul_footer">
-                <li className="li_footer">
-                  <a class="active" href="#home">
-                    1
-                  </a>
-                </li>
-                <li className="li_footer">
-                  <a href="#news">2</a>
-                </li>
-                <li className="li_footer">
-                  <a href="#contact">3</a>
-                </li>
+                <a class="active list_link" href="#home">
+                  <li className="li_footer">1</li>
+                </a>
+                <a class="active list_link" href="#home">
+                  <li className="li_footer">2</li>
+                </a>
+                <a class="active list_link" href="#home">
+                  <li className="li_footer">3</li>
+                </a>
               </ul>
             </div>
             <div className="col-4">
