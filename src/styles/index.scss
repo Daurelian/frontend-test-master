@@ -67,6 +67,9 @@ h3 {
   align-items: center;
   line-height: 1em;
 }
+.footer-filter {
+  margin-bottom: 100px;
+}
 //Cards
 
 .order_for {
@@ -198,6 +201,79 @@ img {
   opacity: 1;
   margin-left: 80px;
   padding-top: 5px;
+}
+
+.container_filter_card {
+  position: relative;
+
+  justify-content: end;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container_filter_card input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  opacity: 0;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+/* Create a custom checkbox */
+.checkmark_card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(160, 160, 160);
+}
+
+/* On mouse-over, add a grey background color */
+//.checkmark:hover input ~ .checkmark {
+//  background-color: rgb(128, 128, 128);
+// z-index: 20;
+//}
+
+/* When the checkbox is checked, add a blue background */
+.container_filter_card input:checked ~ .checkmark_card {
+  background-color: $complementary;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark_card:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container_filter_card input:checked ~ .checkmark_card:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container_filter_card .checkmark_card:after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 //Footer
