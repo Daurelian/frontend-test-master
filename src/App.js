@@ -66,7 +66,7 @@ function App() {
               <img src={boiler} alt="Boiler_Image" className="image_product" />
               <i class="far fa-heart prefer_product"></i>
               <span className="alert_product">Risparmi il 20%</span>
-              <h5 className="title_product">Ariston</h5>
+              <h5 className="title_product">ARISTON</h5>
               <p className="description_product">
                 Matis condens - Condensing Boiler 24 kW Methane - Indoor
               </p>
@@ -90,7 +90,7 @@ function App() {
               <img src={boiler} alt="Boiler_Image" />
               <i class="far fa-heart prefer_product"></i>
               <span className="alert_product">Risparmi il 20%</span>
-              <h5 className="title_product">Ariston</h5>
+              <h5 className="title_product">ARISTON</h5>
               <p className="description_product">
                 Matis condens - Condensing Boiler 24 kW Methane - Indoor
               </p>
@@ -113,7 +113,7 @@ function App() {
               <img src={boiler} alt="Boiler_Image" />
               <i class="far fa-heart prefer_product"></i>
               <span className="alert_product">Risparmi il 20%</span>
-              <h5 className="title_product">Ariston</h5>
+              <h5 className="title_product">ARISTON</h5>
               <p className="description_product">
                 Matis condens - Condensing Boiler 24 kW Methane - Indoor
               </p>

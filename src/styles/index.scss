@@ -54,7 +54,8 @@ h3 {
 
 .order_for {
   text-align: right;
-  font: normal normal normal 15px/20px Avenir;
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 15px;
   letter-spacing: 0px;
   color: #5738ff;
   opacity: 1;
@@ -95,25 +96,27 @@ img {
   opacity: 1;
   letter-spacing: 0px;
   color: #ffffff;
-  font: normal normal 900 12px/15px Avenir;
+  font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
+  font-size: 12px;
   padding: 5px 10px;
   text-align: left;
 }
 
 .title_product {
   text-align: left;
-  font: normal normal 900 12px/15px Avenir;
+  font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
+  font-size: 12px;
   letter-spacing: 0.6px;
   color: #000000;
   opacity: 1;
   margin-top: 10px;
   margin-bottom: 0px;
-  font-weight: bold;
 }
 
 .description_product {
   text-align: left;
-  font: normal normal normal 15px/20px Avenir;
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 15px;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
@@ -122,7 +125,8 @@ img {
 
 .price_product {
   text-align: left;
-  font: normal normal 900 20px/22px Avenir;
+  font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
+  font-size: 22px;
   letter-spacing: 0px;
   color: #fd6600;
   opacity: 1;
@@ -130,7 +134,8 @@ img {
 
 .sale_product {
   text-align: left;
-  font: normal normal 900 12px/15px Avenir;
+  font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
+  font-size: 12px;
   letter-spacing: 0px;
   color: #0000004d;
   opacity: 1;
@@ -151,7 +156,8 @@ img {
 
 .information_product {
   text-align: left;
-  font: normal normal 900 12px/25px Avenir;
+  font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
+  font-size: 12px;
   letter-spacing: 0px;
   color: #fd6600;
   opacity: 1;
@@ -164,7 +170,8 @@ img {
 
 .confront {
   text-align: right;
-  font: normal normal 900 12px/25px Avenir;
+  font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
+  font-size: 12px;
   letter-spacing: 0.6px;
   color: #0000004d;
   opacity: 1;
@@ -183,7 +190,8 @@ img {
 
 .page_prev {
   text-align: left;
-  font: normal normal normal 15px/20px Avenir;
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 15px;
   letter-spacing: 0px;
   color: #00000080;
   opacity: 1;
@@ -192,11 +200,12 @@ img {
 
 .page_next {
   text-align: right;
-  font: normal normal normal 15px/20px Avenir;
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 15px;
   letter-spacing: 0px;
   color: #5738ff;
   opacity: 1;
-  margin-left: 276px;
+  margin-left: 273px;
 }
 
 .page_icon_prev {
@@ -249,7 +258,7 @@ img {
 /* On mouse-over, add a grey background color */
 //.checkmark:hover input ~ .checkmark {
 //  background-color: rgb(128, 128, 128);
- // z-index: 20;
+// z-index: 20;
 //}
 
 /* When the checkbox is checked, add a blue background */
