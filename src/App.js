@@ -12,7 +12,7 @@ function App() {
         <div className="col-2 filter">
           {/* Filtro */}
           <p class="filterTitle">CATEGORIE</p>
-          <h5 class="filterSubTitle">Riscaldamento</h5>
+          <h5 class="filterSubTitle purple">Riscaldamento</h5>
           <ol>
             <h5 class="filterSubTitle">Casa e acqua </h5>
             <h5 class="filterSubTitle"> Casa </h5>
@@ -39,7 +39,7 @@ function App() {
             <h5 class="filterTitle">ALIMENTAZIONE</h5>
             <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Elettrica </h5>
             <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Metano </h5>
-            <h5 class="filterTitle">Utilizzo</h5>
+            <h5 class="filterTitle">UTILIZZO</h5>
             <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Esterno</h5>
             <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Interno </h5>
             <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Interno/Esterno </h5>
