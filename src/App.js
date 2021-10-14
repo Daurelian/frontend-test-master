@@ -1,6 +1,6 @@
-import boiler from "./images/boiler.png";
 import Filter from "./components/filter";
 import Cards from "./components/cards";
+
 function App() {
   return (
     <div className="container">
