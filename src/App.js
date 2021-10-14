@@ -111,7 +111,7 @@ function App() {
               30 a 34<span>(3)</span>
             </h5>
             <h5 class="filterTitle">RECENSIONI</h5>
-            <div>
+            <div class="footer-filter">
               <div class="star-distance container_filter">
                 <div>
                   <input type="checkbox"></input>{" "}
@@ -210,7 +210,7 @@ function App() {
                   <i class="fas fa-star icon_product"></i>
                   <i class="far fa-star icon_product"></i>
                 </div>
-                <span className="confront">CONFRONTA</span>
+                <span className="confront">CONFRONTA</span> 
               </div>
             </div>
             {/* Fine Card */}
@@ -236,7 +236,15 @@ function App() {
                   <i class="fas fa-star icon_product"></i>
                   <i class="far fa-star icon_product"></i>
                 </div>
-                <span className="confront">CONFRONTA</span>
+                <div>
+                <span className="confront">CONFRONTA
+                 
+                  </span>
+<div class="container_filter_card">
+                  
+                  <input type="checkbox"></input> <span class="checkmark_card"></span> 
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-4 card_product">
