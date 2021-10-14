@@ -210,7 +210,13 @@ function App() {
                   <i class="fas fa-star icon_product"></i>
                   <i class="far fa-star icon_product"></i>
                 </div>
-                <span className="confront">CONFRONTA</span> 
+                <span className="confront">CONFRONTA</span>
+                <div>
+                  <div class="container_filter_card">
+                    <input type="checkbox"></input>
+                    <div class="checkmark_card"></div>
+                  </div>
+                </div>
               </div>
             </div>
             {/* Fine Card */}
@@ -236,13 +242,11 @@ function App() {
                   <i class="fas fa-star icon_product"></i>
                   <i class="far fa-star icon_product"></i>
                 </div>
+                <span className="confront">CONFRONTA</span>
                 <div>
-                <span className="confront">CONFRONTA
-                 
-                  </span>
-<div class="container_filter_card">
-                  
-                  <input type="checkbox"></input> <span class="checkmark_card"></span> 
+                  <div class="container_filter_card">
+                    <input type="checkbox"></input>
+                    <div class="checkmark_card"></div>
                   </div>
                 </div>
               </div>
@@ -270,6 +274,12 @@ function App() {
                   <i class="far fa-star icon_product"></i>
                 </div>
                 <span className="confront">CONFRONTA</span>
+                <div>
+                  <div class="container_filter_card">
+                    <input type="checkbox"></input>
+                    <div class="checkmark_card"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-4 card_product">

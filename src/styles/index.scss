@@ -165,6 +165,7 @@ img {
 
 .under_product {
   display: flex;
+  justify-content: space-between;
 }
 
 .icon_span {
@@ -199,16 +200,12 @@ img {
   letter-spacing: 0.6px;
   color: #0000004d;
   opacity: 1;
-  margin-left: 80px;
+  padding-left: 80px;
   padding-top: 5px;
 }
 
 .container_filter_card {
   position: relative;
-
-  justify-content: end;
-  padding-left: 30px;
-  margin-bottom: 10px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
