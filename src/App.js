@@ -1,7 +1,11 @@
+import React, { useState } from "react";
 import Filter from "./components/filter";
 import Cards from "./components/cards";
 
 function App() {
+
+  const [boiler, setBoiler] = useState([])
+
   return (
     <div className="container">
       <div className="row">
@@ -14,7 +18,7 @@ function App() {
         <Filter />
         
         <div className="col-9 product">
-         <Cards />
+         <Cards boiler={boiler} setBoiler={setBoiler} />
          </div>
         </div>
        </div>
