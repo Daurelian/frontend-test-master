@@ -10,7 +10,7 @@ $white: #ffffff;
 // CSS BELOW
 body {
   background-color: $white;
-  font-family: "Avenir-Light", Arial, Helvetica, sans-serif;
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -34,6 +34,12 @@ h3 {
 }
 
 // Filter
+.purple {
+  color: $complementary;
+}
+.darkPurple {
+  color: $primary;
+}
 
 .filterTitle {
   text-align: left;
@@ -48,8 +54,19 @@ h3 {
 .filterSubTitle {
   font-size: 15px;
   line-height: 1em;
+  padding-top: 3px;
 }
 
+.star-filter {
+  padding-right: 2px;
+  font-size: 12px;
+}
+
+.star-distance {
+  display: flex;
+  align-items: center;
+  line-height: 1em;
+}
 //Cards
 
 .order_for {
@@ -259,7 +276,6 @@ img {
 //CSSCheckBox
 
 .container_filter {
-  display: block;
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
@@ -288,7 +304,10 @@ img {
   left: 0;
   height: 20px;
   width: 20px;
-  background-color: #eee;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(160, 160, 160);
 }
 
 /* On mouse-over, add a grey background color */
@@ -316,8 +335,8 @@ img {
 
 /* Style the checkmark/indicator */
 .container_filter .checkmark:after {
-  left: 7px;
-  top: 3px;
+  left: 6px;
+  top: 2px;
   width: 6px;
   height: 12px;
   border: solid white;
