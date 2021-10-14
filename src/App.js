@@ -51,41 +51,41 @@ function App() {
             <h5 class="filterTitle">RECENSIONI</h5>
             <div>
 
-              <span>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"> </i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
-              <span>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </span>
-              <span>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </span>
-              <span>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </span>
-              <span>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
+              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"> </i>
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i>
+              </p>
+              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+              </p>
+              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+              </p>
+              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
+                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+              </p>
+              <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
+                <i class="fas fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i>
+              </p>
             </div>
           </div>
         </div>
