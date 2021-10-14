@@ -22,32 +22,32 @@ function App() {
           <div>
             <h5 class="filterTitle">SCEGLI PER</h5>
             <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>
-            Disponibili </h5>
+            Disponibili <span>(3)</span></h5>
             <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>
-            In promozione </h5>
+            In promozione <span>(3)</span></h5>
             <h5 class="filterTitle">MARCHE</h5>
             <h5 class="filterSubTitle container_filter">
               <input type="checkbox"></input> <span class="checkmark"></span>
-              Ariston
+              Ariston<span>(3)</span>
             </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> Baxi </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> Ariston </h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> Baxi <span>(3)</span></h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> Ariston <span>(3)</span></h5>
             <h5 class="filterTitle">TIPOLOGIA</h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  A Condensazione </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> Camera Aperta </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> Camera Stagna </h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  A Condensazione <span>(3)</span></h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> Camera Aperta <span>(3)</span></h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> Camera Stagna <span>(3)</span></h5>
             <h5 class="filterTitle">ALIMENTAZIONE</h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Elettrica </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Metano </h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Elettrica <span>(3)</span></h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Metano <span>(3)</span></h5>
             <h5 class="filterTitle">UTILIZZO</h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Esterno</h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Interno </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Interno/Esterno </h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Esterno<span>(3)</span></h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Interno <span>(3)</span></h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  Interno/Esterno <span>(3)</span></h5>
             <h5 class="filterTitle">POTENZA NOMINALE(kW)</h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 19.5 </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  24 </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  25 </h5>
-            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  da 30 a 34</h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 19.5<span>(3)</span> </h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  24 <span>(3)</span></h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  25 <span>(3)</span></h5>
+            <h5 class="filterSubTitle container_filter"> <input type="checkbox"></input> <span class="checkmark"></span>  da 30 a 34<span>(3)</span></h5>
             <h5 class="filterTitle">RECENSIONI</h5>
             <div>
 
@@ -56,35 +56,35 @@ function App() {
                 <i class="fas fa-star star-filter"> </i>
                 <i class="fas fa-star star-filter"></i>
                 <i class="fas fa-star star-filter"></i>
-                <i class="fas fa-star star-filter"></i>
+                <i class="fas fa-star star-filter"></i><span>(3)</span>
               </p>
               <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
                 <i class="fas fa-star star-filter"></i>
                 <i class="fas fa-star star-filter"></i>
                 <i class="fas fa-star star-filter"></i>
                 <i class="fas fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i><span>(3)</span>
               </p>
               <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
                 <i class="fas fa-star star-filter"></i>
                 <i class="fas fa-star star-filter"></i>
                 <i class="fas fa-star star-filter"></i>
                 <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i><span>(3)</span>
               </p>
               <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
                 <i class="fas fa-star star-filter"></i>
                 <i class="fas fa-star star-filter"></i>
                 <i class="far fa-star star-filter"></i>
                 <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i><span>(3)</span>
               </p>
               <p class="star-distance container_filter"> <input type="checkbox"></input> <span class="checkmark"></span> 
                 <i class="fas fa-star star-filter"></i>
                 <i class="far fa-star star-filter"></i>
                 <i class="far fa-star star-filter"></i>
                 <i class="far fa-star star-filter"></i>
-                <i class="far fa-star star-filter"></i>
+                <i class="far fa-star star-filter"></i><span>(3)</span>
               </p>
             </div>
           </div>
