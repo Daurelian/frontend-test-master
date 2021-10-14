@@ -76,13 +76,13 @@ function App() {
                 Sopralluogo e installazione inclusi
               </h6>
               <hr class="divisor_product"></hr>
-              <span class="icon_span">
+              <div class="icon_span">
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="far fa-star icon_product"></i>
-              </span>
+              </div>
               <span className="confront">CONFRONTA</span>
             </div>
             {/* Fine Card */}
@@ -100,13 +100,13 @@ function App() {
                 Sopralluogo e installazione inclusi
               </h6>
               <hr class="divisor_product"></hr>
-              <span class="icon">
+              <div class="icon_span">
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="far fa-star icon_product"></i>
-              </span>
+              </div>
               <span className="confront">CONFRONTA</span>
             </div>
             <div className="col-4 card_product">
@@ -123,13 +123,13 @@ function App() {
                 Sopralluogo e installazione inclusi
               </h6>
               <hr class="divisor_product"></hr>
-              <span class="icon">
+              <div class="icon_span">
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="fas fa-star icon_product"></i>
                 <i class="far fa-star icon_product"></i>
-              </span>
+              </div>
               <span className="confront">CONFRONTA</span>
             </div>
             <div className="col-4 card_product">
