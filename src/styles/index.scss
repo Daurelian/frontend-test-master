@@ -326,8 +326,6 @@ img {
 //Pagination
 .ul_footer {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
 }
@@ -335,7 +333,6 @@ img {
 .li_footer {
   width: 36px;
   height: 36px;
-  padding: 0px 14px;
 }
 
 .list_link {
@@ -348,13 +345,20 @@ img {
   opacity: 1;
 }
 
-.li_footer:hover {
+.list_link:hover {
   background: #5738ff;
   border: 2px solid #5738ff;
   color: #ffffff;
   border-radius: 36px;
-  align-items: center;
 }
+
+// .li_footer:hover {
+//   background: #5738ff;
+//   border: 2px solid #5738ff;
+//   color: #ffffff;
+//   border-radius: 36px;
+//   align-items: center;
+// }
 
 //CSSCheckBox
 
