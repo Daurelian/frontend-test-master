@@ -28,6 +28,9 @@ function App() {
 
   return (
     <div className="container">
+      <div className="row fixed_banner">
+        <Banner state={state} />
+      </div>
       <div className="row">
         <h5 className="order_for">
           Ordina per: migliori recensioni{" "}
@@ -46,9 +49,6 @@ function App() {
           />
           <Footer />
         </div>
-      </div>
-      <div className="row fixed_banner">
-        <Banner state={state} />
       </div>
     </div>
   );

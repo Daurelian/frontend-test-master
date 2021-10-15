@@ -426,14 +426,18 @@ img {
 
 //Banner Confront
 
+.fixed_banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .banner {
   display: flex;
   background-color: $complementary;
   box-shadow: 0px -2px 10px #0000001a;
   opacity: 1;
   height: 65px;
-  margin-bottom: 50px;
-  margin-top: 80px;
 }
 
 .text_confront {
