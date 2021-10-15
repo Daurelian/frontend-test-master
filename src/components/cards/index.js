@@ -2,7 +2,7 @@ import React, { useEffect, useState, useReducer } from "react";
 import axios from "axios";
 import Card from "./card";
 
-export default function Cards({ boiler, setBoiler }) {
+export default function Cards({ boiler, setBoiler, state, dispatch }) {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get("http://localhost:9000/boilers");
@@ -13,26 +13,6 @@ export default function Cards({ boiler, setBoiler }) {
     }
     fetchData();
   }, []);
-
-  const initialState = { id: boiler._id, product: [] };
-  const [state, dispatch] = useReducer(reducer, initialState);
-  function reducer(state, action) {
-    switch (action.type) {
-      case "toggle":
-        if (state.product.includes(action.payload)) {
-          const result_array = state.product.filter(
-            (e) => e !== action.payload
-          );
-          return { ...state, product: result_array };
-        } else {
-          return { ...state, product: [...state.product, action.payload] };
-        }
-
-        break;
-      default:
-        return state;
-    }
-  }
 
   console.log("finale", state.product);
   return (
