@@ -31,7 +31,7 @@ function App() {
       <div className="row fixed_banner">
         <Banner state={state} />
       </div>
-      <div className="row">
+      <div className="row order_row">
         <h5 className="order_for">
           Ordina per: migliori recensioni{" "}
           <i class="fas fa-angle-down order_for_icon"></i>

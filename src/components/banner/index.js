@@ -5,12 +5,12 @@ export default function Banner({ state }) {
   else if (state.product.length === 1)
     return (
       <>
-        <div className="col-6 banner">
-          <h6 className="text_confront">Seleziona altri due prodotti</h6>
-        </div>
-        <div className="col-6 banner">
+        <div className="col-12 banner">
+          <h6 className="text_confront">
+            Seleziona altri due prodotti per confrontarli
+          </h6>
           <button
-            disabled="disabled"
+            disabled={true}
             type="button"
             className="button_confront_disable"
           >
@@ -22,12 +22,12 @@ export default function Banner({ state }) {
   else if (state.product.length === 2)
     return (
       <>
-        <div className="col-6 banner">
-          <h6 className="text_confront">Seleziona un'altro prodotto</h6>
-        </div>
-        <div className="col-6 banner">
+        <div className="col-12 banner">
+          <h6 className="text_confront">
+            Seleziona ancora un prodotto per un confronto più dettagliato
+          </h6>
           <button
-            disabled="disabled"
+            disabled={true}
             type="button"
             className="button_confront_disable"
           >
@@ -39,10 +39,8 @@ export default function Banner({ state }) {
   else if (state.product.length === 3)
     return (
       <>
-        <div className="col-6 banner">
-          <h6 className="text_confront">Può essere fatto il confronto</h6>
-        </div>
-        <div className="col-6 banner">
+        <div className="col-12 banner">
+          <h6 className="text_confront">Confronta i modelli selezionati</h6>
           <button type="button" className="button_confront">
             CONFRONTA
           </button>
@@ -52,14 +50,12 @@ export default function Banner({ state }) {
   else if (state.product.length > 3)
     return (
       <>
-        <div className="col-6 banner">
+        <div className="col-12 banner">
           <h6 className="text_confront">
             Hai selezionato troppi prodotti, selezionane solo 3
           </h6>
-        </div>
-        <div className="col-6 banner">
           <button
-            disabled="disabled"
+            disabled={true}
             type="button "
             className="button_confront_disable"
           >

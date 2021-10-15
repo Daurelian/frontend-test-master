@@ -71,7 +71,11 @@ h3 {
   margin-bottom: 100px;
 }
 //Cards
-
+.order_row {
+  display: flex;
+  justify-content: end;
+  margin-right: 5px;
+}
 .order_for {
   text-align: right;
   font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
@@ -79,7 +83,6 @@ h3 {
   letter-spacing: 0px;
   color: #5738ff;
   opacity: 1;
-  padding-right: 50px;
 }
 
 .order_for_icon {
@@ -96,7 +99,7 @@ img {
 }
 .card_product {
   position: relative;
-  width: 30%;
+  width: calc(33.3% - 30px);
   margin: 10px 15px 40px;
 }
 .prefer_product {
@@ -211,6 +214,8 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-right: 25px;
+  margin-top: 5px;
 }
 /* Hide the browser's default checkbox */
 .container_filter_card input {
@@ -440,11 +445,11 @@ img {
   box-shadow: 0px -2px 10px #0000001a;
   opacity: 1;
   height: 65px;
+  justify-content: space-between;
 }
 
 .text_confront {
-  justify-content: start;
-  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-family: "Avenir-Light";
   text-align: left;
   font-size: 20px;
   color: $white;
@@ -454,27 +459,25 @@ img {
 }
 
 .button_confront {
-  font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
+  font-family: "Avenir-Black";
   color: $white;
   background-color: $complementary;
-  height: 45px;
+  letter-spacing: 0.6px;
   border: 2px solid $white;
   border-radius: 100px;
   opacity: 1;
   padding: 10px 40px;
-  margin-left: 400px;
   margin-top: 10px;
 }
 
 .button_confront_disable {
-  font-family: "Avenir-Black", Arial, Helvetica, sans-serif;
+  font-family: "Avenir-Black";
   color: $white;
   background-color: $complementary;
-  height: 45px;
+  letter-spacing: 0.6px;
   border: 2px solid $white;
   border-radius: 100px;
   opacity: 60%;
   padding: 10px 40px;
-  margin-left: 400px;
   margin-top: 10px;
 }
