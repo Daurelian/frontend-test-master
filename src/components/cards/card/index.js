@@ -1,5 +1,6 @@
 import React from "react";
 import boiler from "../../../images/boiler.png";
+import { useReducer } from "react";
 import Stars from "./stars";
 
 export default function Card({
@@ -12,8 +13,22 @@ export default function Card({
   prezzo,
   prezzoPreSconto,
   stelle,
-  isChecked,
 }) {
+  const initialState = { id: id, product: [] };
+  console.log("product", initialState.product);
+  const [state, dispatch] = useReducer(reducer, initialState);
+  function reducer(state, action) {
+    switch (action.type) {
+      case "toggle":
+        return state.product.find((e) => e === id) === undefined
+          ? console.log()
+          : console.log("c'è");
+        break;
+      default:
+        return state;
+    }
+  }
+
   return (
     <>
       <img src={boiler} alt="Boiler_Image" className="image_product" />
@@ -44,7 +59,10 @@ export default function Card({
         <span className="confront">CONFRONTA</span>
         <div>
           <div class="container_filter_card">
-            <input type="checkbox" onClick={() => !isChecked}></input>
+            <input
+              type="checkbox"
+              onClick={() => dispatch({ type: "toggle" })}
+            ></input>
             <div class="checkmark_card"></div>
           </div>
         </div>
