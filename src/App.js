@@ -48,7 +48,7 @@ function App() {
         </div>
       </div>
       <div className="row fixed_banner">
-        <Banner />
+        <Banner state={state} />
       </div>
     </div>
   );
