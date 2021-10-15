@@ -22,7 +22,7 @@ function App() {
           <Footer />
         </div>
       </div>
-      <div className="row">
+      <div className="row fixed_banner">
         <div className="col-6 banner">
           <h6 className="text_confront">Seleziona altri due prodotti</h6>
         </div>
