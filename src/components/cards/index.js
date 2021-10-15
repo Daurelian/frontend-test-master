@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useReducer } from "react";
 import axios from "axios";
 import Card from "./card";
 
@@ -13,7 +13,20 @@ export default function Cards({ boiler, setBoiler }) {
     }
     fetchData();
   }, []);
-  console.log(boiler);
+  //console.log(boiler);
+
+  const initialState = { id: boiler._id, isChecked: false };
+  function reducer(state, action) {
+    switch (action.type) {
+      case "confront":
+        break;
+      default:
+        return state;
+    }
+  }
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
     <div className="row">
       {/* Card */}
@@ -29,6 +42,7 @@ export default function Cards({ boiler, setBoiler }) {
             prezzo={boiler.prezzo}
             prezzoPreSconto={boiler.prezzoPreSconto}
             stelle={boiler.stelle}
+            isChecked={state.isChecked}
           />
         </div>
       ))}
