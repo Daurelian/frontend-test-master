@@ -21,7 +21,10 @@ export default function Cards({ boiler, setBoiler }) {
       case "toggle":
         if (state.product.includes(action.payload)) {
           console.log("if", state.product);
-          return { ...state, product: [...state.product] };
+          const result_array = state.product.filter(
+            (e) => e !== action.payload
+          );
+          return { ...state, product: result_array };
         } else {
           console.log("else", state.product);
           return { ...state, product: [...state.product, action.payload] };
