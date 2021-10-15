@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Filter from "./components/filter";
 import Cards from "./components/cards";
+import Footer from "./components/footer";
 
 function App() {
   const [boiler, setBoiler] = useState([]);
@@ -18,34 +19,17 @@ function App() {
 
         <div className="col-9 product">
           <Cards boiler={boiler} setBoiler={setBoiler} />
-          <div className="col-12">
-            <hr class="divisor_footer"></hr>
-          </div>
-          <div className="row footer">
-            <div className="col-4">
-              <span className="page_prev">
-                <i class="fas fa-angle-left page_icon_prev"></i>Prev
-              </span>
-            </div>
-            <div className="col-4">
-              <ul className="ul_footer">
-                <a class="active list_link" href="#home">
-                  <li className="li_footer">1</li>
-                </a>
-                <a class="active list_link" href="#home">
-                  <li className="li_footer">2</li>
-                </a>
-                <a class="active list_link" href="#home">
-                  <li className="li_footer">3</li>
-                </a>
-              </ul>
-            </div>
-            <div className="col-4">
-              <span className="page_next">
-                Next<i class="fas fa-angle-right page_icon_next"></i>
-              </span>
-            </div>
-          </div>
+          <Footer />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-6 banner">
+          <h6 className="text_confront">Seleziona altri due prodotti</h6>
+        </div>
+        <div className="col-6 banner">
+          <button type="button" className="button_confront">
+            CONFRONTA
+          </button>
         </div>
       </div>
     </div>
