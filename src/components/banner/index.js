@@ -9,7 +9,11 @@ export default function Banner({ state }) {
           <h6 className="text_confront">Seleziona altri due prodotti</h6>
         </div>
         <div className="col-6 banner">
-          <button type="button" className="button_confront">
+          <button
+            disabled="disabled"
+            type="button"
+            className="button_confront_disable"
+          >
             CONFRONTA
           </button>
         </div>
@@ -22,7 +26,11 @@ export default function Banner({ state }) {
           <h6 className="text_confront">Seleziona un'altro prodotto</h6>
         </div>
         <div className="col-6 banner">
-          <button type="button" className="button_confront">
+          <button
+            disabled="disabled"
+            type="button"
+            className="button_confront_disable"
+          >
             CONFRONTA
           </button>
         </div>
@@ -50,7 +58,11 @@ export default function Banner({ state }) {
           </h6>
         </div>
         <div className="col-6 banner">
-          <button type="button" className="button_confront">
+          <button
+            disabled="disabled"
+            type="button "
+            className="button_confront_disable"
+          >
             CONFRONTA
           </button>
         </div>
