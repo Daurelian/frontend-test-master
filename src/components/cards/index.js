@@ -7,7 +7,7 @@ export default function Cards({ boiler, setBoiler }) {
     async function fetchData() {
       const response = await axios.get("http://localhost:9000/boilers");
       if (response.status === 200) {
-        console.log(response);
+        // console.log(response);
         setBoiler(response.data);
       }
     }
@@ -20,13 +20,11 @@ export default function Cards({ boiler, setBoiler }) {
     switch (action.type) {
       case "toggle":
         if (state.product.includes(action.payload)) {
-          console.log("if", state.product);
           const result_array = state.product.filter(
             (e) => e !== action.payload
           );
           return { ...state, product: result_array };
         } else {
-          console.log("else", state.product);
           return { ...state, product: [...state.product, action.payload] };
         }
 
@@ -36,6 +34,7 @@ export default function Cards({ boiler, setBoiler }) {
     }
   }
 
+  console.log("finale", state.product);
   return (
     <div className="row">
       {/* Card */}
