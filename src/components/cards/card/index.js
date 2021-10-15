@@ -12,6 +12,7 @@ export default function Card({
   prezzo,
   prezzoPreSconto,
   stelle,
+  isChecked,
 }) {
   return (
     <>
@@ -43,7 +44,7 @@ export default function Card({
         <span className="confront">CONFRONTA</span>
         <div>
           <div class="container_filter_card">
-            <input type="checkbox"></input>
+            <input type="checkbox" onClick={() => !isChecked}></input>
             <div class="checkmark_card"></div>
           </div>
         </div>
