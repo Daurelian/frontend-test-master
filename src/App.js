@@ -2,6 +2,7 @@ import React, { useState, useReducer } from "react";
 import Filter from "./components/filter";
 import Cards from "./components/cards";
 import Footer from "./components/footer";
+import Banner from "./components/banner";
 
 function App() {
   const [boiler, setBoiler] = useState([]);
@@ -47,14 +48,7 @@ function App() {
         </div>
       </div>
       <div className="row fixed_banner">
-        <div className="col-6 banner">
-          <h6 className="text_confront">Seleziona altri due prodotti</h6>
-        </div>
-        <div className="col-6 banner">
-          <button type="button" className="button_confront">
-            CONFRONTA
-          </button>
-        </div>
+        <Banner />
       </div>
     </div>
   );
