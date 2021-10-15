@@ -13,25 +13,8 @@ export default function Card({
   prezzo,
   prezzoPreSconto,
   stelle,
+  dispatch,
 }) {
-  const initialState = { id: id, product: [] };
-  const [state, dispatch] = useReducer(reducer, initialState);
-  function reducer(state, action) {
-    switch (action.type) {
-      case "toggle":
-        if (state.product.find((e) => e === id))
-          return { ...state, product: state.product.push(id) };
-        else {
-          console.log("else", state.product);
-          return { ...state, product: [] };
-        }
-
-        break;
-      default:
-        return state;
-    }
-  }
-
   return (
     <>
       <img src={boiler} alt="Boiler_Image" className="image_product" />
@@ -64,7 +47,7 @@ export default function Card({
           <div class="container_filter_card">
             <input
               type="checkbox"
-              onClick={() => dispatch({ type: "toggle" })}
+              onClick={() => dispatch({ type: "toggle", payload: id })}
             ></input>
             <div class="checkmark_card"></div>
           </div>

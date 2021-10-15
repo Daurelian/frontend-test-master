@@ -14,6 +14,25 @@ export default function Cards({ boiler, setBoiler }) {
     fetchData();
   }, []);
 
+  const initialState = { id: boiler._id, product: [] };
+  const [state, dispatch] = useReducer(reducer, initialState);
+  function reducer(state, action) {
+    switch (action.type) {
+      case "toggle":
+        if (state.product.includes(action.payload)) {
+          console.log("if", state.product);
+          return { ...state, product: [...state.product] };
+        } else {
+          console.log("else", state.product);
+          return { ...state, product: [...state.product, action.payload] };
+        }
+
+        break;
+      default:
+        return state;
+    }
+  }
+
   return (
     <div className="row">
       {/* Card */}
@@ -29,6 +48,7 @@ export default function Cards({ boiler, setBoiler }) {
             prezzo={boiler.prezzo}
             prezzoPreSconto={boiler.prezzoPreSconto}
             stelle={boiler.stelle}
+            dispatch={dispatch}
           />
         </div>
       ))}
