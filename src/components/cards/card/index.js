@@ -15,14 +15,17 @@ export default function Card({
   stelle,
 }) {
   const initialState = { id: id, product: [] };
-  console.log("product", initialState.product);
   const [state, dispatch] = useReducer(reducer, initialState);
   function reducer(state, action) {
     switch (action.type) {
       case "toggle":
-        return state.product.find((e) => e === id) === undefined
-          ? console.log()
-          : console.log("c'è");
+        if (state.product.find((e) => e === id))
+          return { ...state, product: state.product.push(id) };
+        else {
+          console.log("else", state.product);
+          return { ...state, product: [] };
+        }
+
         break;
       default:
         return state;
