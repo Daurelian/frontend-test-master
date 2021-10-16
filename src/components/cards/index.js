@@ -9,11 +9,9 @@ export default function Cards({ boiler, setBoiler, state, dispatch }) {
       if (response.status === 200) {
         // console.log(response);
         // console.log("con", state.filters.inSconto);
-        state.filters.disponibile
+        state.filters.inSconto
           ? setBoiler(
-              response.data.filter(
-                (e) => e.disponibile === state.filters.disponibile
-              )
+              response.data.filter((e) => e.inSconto === state.filters.inSconto)
             )
           : setBoiler(response.data.filter((e) => (e.brand = "Ariston"))); // setBoiler(
         //     response.data.filter((e) => e.inSconto === state.filters.inSconto)
@@ -21,7 +19,7 @@ export default function Cards({ boiler, setBoiler, state, dispatch }) {
       }
     }
     fetchData();
-  }, [state.filters.disponibile, state.filters.insconto]);
+  }, [state.filters.disponibile, state.filters.inSconto]);
 
   // useEffect(() => {
   //   async function fetchData() {
