@@ -4,9 +4,16 @@ import Cards from "./components/cards";
 import Footer from "./components/footer";
 import Banner from "./components/banner";
 
+/* eslint-disable no-alert */
+
 function App() {
   const [boiler, setBoiler] = useState([]);
-  const initialState = { id: boiler._id, product: [] };
+
+  const initialState = {
+    id: boiler._id,
+    product: [],
+    filters: { disponibile: false, inSconto: false },
+  };
   const [state, dispatch] = useReducer(reducer, initialState);
   function reducer(state, action) {
     switch (action.type) {
@@ -21,11 +28,43 @@ function App() {
         }
 
         break;
+      case "filter_disponibile":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            disponibile: !state.filters.disponibile,
+          },
+        };
+
+      case "filter_inSconto":
+        return {
+          ...state,
+          filters: { ...state.filters, inSconto: !state.filters.inSconto },
+        };
+
+      // case "filter_sconto":
+      //   return {
+      //     ...state,
+      //     filters: {
+      //       ...state.filters,
+      //       inSconto: !state.filters.inSconto,
+      //     },
+      //   };
+
+      // case "filter":
+      //   return { ...state, filter: action.payload };
+      // default:
+      //   return state;
       default:
         return state;
     }
   }
-
+  console.log(
+    "sconto & disponibile",
+    state.filters.inSconto,
+    state.filters.disponibile
+  );
   return (
     <div className="container">
       <div className="row fixed_banner">

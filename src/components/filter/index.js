@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Filter(props) {
+export default function Filter({ dispatch }) {
   return (
     <div className="col-3 filter">
       {/* Filtro */}
@@ -15,11 +15,31 @@ export default function Filter(props) {
       <div>
         <h5 class="filterTitle">SCEGLI PER</h5>
         <div class="filterSubTitle container_filter">
-          <input type="checkbox"></input> <span class="checkmark"></span>
+          <input
+            type="checkbox"
+            value="true"
+            onClick={(event) =>
+              dispatch({
+                type: "filter_disponibile",
+                payload: event.target.value,
+              })
+            }
+          ></input>
+          <span class="checkmark"></span>
           <span>Disponibili</span> <span>(3)</span>
         </div>
         <div class="filterSubTitle container_filter">
-          <input type="checkbox"></input> <span class="checkmark"></span>
+          <input
+            type="checkbox"
+            value="true"
+            onClick={(event) =>
+              dispatch({
+                type: "filter_inSconto",
+                payload: event.target.value,
+              })
+            }
+          ></input>{" "}
+          <span class="checkmark"></span>
           <span>In promozione </span>
           <span>(3)</span>
         </div>

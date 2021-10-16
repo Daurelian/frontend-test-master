@@ -8,13 +8,33 @@ export default function Cards({ boiler, setBoiler, state, dispatch }) {
       const response = await axios.get("http://localhost:9000/boilers");
       if (response.status === 200) {
         // console.log(response);
-        setBoiler(response.data);
+        // console.log("con", state.filters.inSconto);
+        state.filters.disponibile
+          ? setBoiler(
+              response.data.filter(
+                (e) => e.disponibile === state.filters.disponibile
+              )
+            )
+          : setBoiler(response.data.filter((e) => (e.brand = "Ariston"))); // setBoiler(
+        //     response.data.filter((e) => e.inSconto === state.filters.inSconto)
+        //   )
       }
     }
     fetchData();
-  }, []);
+  }, [state.filters.disponibile, state.filters.insconto]);
 
-  console.log("finale", state.product);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await axios.get("http://localhost:9000/boilers");
+  //     if (response.status === 200) {
+  //       // console.log(response);
+  //       setBoiler(response.data.filter((e) => e.disponibile === state.filter));
+  //     }
+  //   }
+  //   fetchData();
+  // }, [state.filter]);
+
+  // console.log("finale", state.product);
   return (
     <div className="row">
       {/* Card */}
