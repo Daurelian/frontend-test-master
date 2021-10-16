@@ -38,7 +38,7 @@ function App() {
         </h5>
       </div>
       <div className="row">
-        <Filter />
+        <Filter dispatch={dispatch} />
 
         <div className="col-9 product">
           <Cards

@@ -1,6 +1,6 @@
 import React from "react";
 import boiler from "../../../images/boiler.png";
-import { useReducer } from "react";
+
 import Stars from "./stars";
 
 export default function Card({
