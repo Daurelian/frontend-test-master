@@ -259,7 +259,6 @@ function App() {
   //   state.filters.disponibile
   // );
 
-  console.log("ma", state.filters.pn30);
   return (
     <div className="container">
       <div className="row fixed_banner">
