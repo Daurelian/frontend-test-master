@@ -20,11 +20,11 @@
       "_id": "02",
       "immagine": "./boiler.png",
       "brand": "Ariston",
-      "descrizione": "Genus One Condensing Boiler - 24 kW",
+      "descrizione": "Genus One Condensing Boiler - 19.5 kW",
       "prezzo": "899,00",
       "disponibile": true,
       "tipologia": "condensazione",
-      "potenzaNominale": "24",
+      "potenzaNominale": "19.5",
       "utilizzo": "interno",
       "alimentazione": "elettrica",
       "prezzoPreSconto": "927,00",
@@ -256,7 +256,7 @@
       "prezzoPreSconto": "",
       "inSconto": false,
       "note": "Sopralluogo e installazione inclusi",
-      "stelle": 4
+      "stelle": 1
     }
   ],
   "stock": [

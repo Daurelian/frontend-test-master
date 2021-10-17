@@ -12,7 +12,29 @@ function App() {
   const initialState = {
     id: boiler._id,
     product: [],
-    filters: { disponibile: false, inSconto: false },
+    filters: {
+      disponibile: false,
+      inSconto: false,
+      ariston: false,
+      baxi: false,
+      condensazione: false,
+      cameraAperta: false,
+      cameraStagna: false,
+      elettrica: false,
+      metano: false,
+      pn19: false,
+      pn24: false,
+      pn28: false,
+      pn30: false,
+      esterno: false,
+      interno: false,
+      internoEsterno: false,
+      stars5: false,
+      stars4: false,
+      stars3: false,
+      stars2: false,
+      stars1: false,
+    },
   };
   const [state, dispatch] = useReducer(reducer, initialState);
   function reducer(state, action) {
@@ -36,13 +58,184 @@ function App() {
             disponibile: !state.filters.disponibile,
           },
         };
-
+        break;
       case "filter_inSconto":
         return {
           ...state,
           filters: { ...state.filters, inSconto: !state.filters.inSconto },
         };
+        break;
+      case "filter_ariston":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            ariston: !state.filters.ariston ? action.payload : false,
+          },
+        };
 
+      case "filter_baxi":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            baxi: !state.filters.baxi ? action.payload : false,
+          },
+        };
+      case "filter_condensazione":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            condensazione: !state.filters.condensazione
+              ? action.payload
+              : false,
+          },
+        };
+      case "filter_cameraAperta":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            cameraAperta: !state.filters.cameraAperta ? action.payload : false,
+          },
+        };
+      case "filter_cameraStagna":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            cameraStagna: !state.filters.cameraStagna ? action.payload : false,
+          },
+        };
+
+      case "filter_elettrica":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            elettrica: !state.filters.elettrica ? action.payload : false,
+          },
+        };
+
+      case "filter_metano":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            metano: !state.filters.metano ? action.payload : false,
+          },
+        };
+
+      case "filter_pn19":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            pn19: !state.filters.pn19 ? action.payload : false,
+          },
+        };
+
+      case "filter_pn24":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            pn24: !state.filters.pn24 ? action.payload : false,
+          },
+        };
+
+      case "filter_pn28":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            pn28: !state.filters.pn28 ? action.payload : false,
+          },
+        };
+
+      case "filter_pn30":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            pn30: !state.filters.pn30 ? action.payload : false,
+          },
+        };
+
+      case "filter_esterno":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            esterno: !state.filters.esterno ? action.payload : false,
+          },
+        };
+
+      case "filter_interno":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            interno: !state.filters.interno ? action.payload : false,
+          },
+        };
+
+      case "filter_internoEsterno":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            internoEsterno: !state.filters.internoEsterno
+              ? action.payload
+              : false,
+          },
+        };
+
+      case "filter_stars5":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            stars5: !state.filters.stars5 ? action.payload : false,
+          },
+        };
+
+      case "filter_stars4":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            stars4: !state.filters.stars4 ? action.payload : false,
+          },
+        };
+
+      case "filter_stars3":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            stars3: !state.filters.stars3 ? action.payload : false,
+          },
+        };
+
+      case "filter_stars2":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            stars2: !state.filters.stars2 ? action.payload : false,
+          },
+        };
+
+      case "filter_stars1":
+        return {
+          ...state,
+          filters: {
+            ...state.filters,
+            stars1: !state.filters.stars1 ? action.payload : false,
+          },
+        };
       // case "filter_sconto":
       //   return {
       //     ...state,
@@ -60,11 +253,13 @@ function App() {
         return state;
     }
   }
-  console.log(
-    "sconto & disponibile",
-    state.filters.inSconto,
-    state.filters.disponibile
-  );
+  // console.log(
+  //   "sconto & disponibile",
+  //   state.filters.inSconto,
+  //   state.filters.disponibile
+  // );
+
+  console.log("ma", state.filters.pn30);
   return (
     <div className="container">
       <div className="row fixed_banner">

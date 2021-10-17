@@ -47,7 +47,7 @@ export default function Card({
           <div class="container_filter_card">
             <input
               type="checkbox"
-              onClick={() => dispatch({ type: "toggle", payload: id })}
+              onChange={() => dispatch({ type: "toggle", payload: id })}
             ></input>
             <div class="checkmark_card"></div>
           </div>
