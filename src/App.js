@@ -37,6 +37,7 @@ function App() {
     },
   };
   const [state, dispatch] = useReducer(reducer, initialState);
+
   function reducer(state, action) {
     switch (action.type) {
       case "toggle":
@@ -236,28 +237,11 @@ function App() {
             stars1: !state.filters.stars1 ? action.payload : false,
           },
         };
-      // case "filter_sconto":
-      //   return {
-      //     ...state,
-      //     filters: {
-      //       ...state.filters,
-      //       inSconto: !state.filters.inSconto,
-      //     },
-      //   };
 
-      // case "filter":
-      //   return { ...state, filter: action.payload };
-      // default:
-      //   return state;
       default:
         return state;
     }
   }
-  // console.log(
-  //   "sconto & disponibile",
-  //   state.filters.inSconto,
-  //   state.filters.disponibile
-  // );
 
   return (
     <div className="container">
