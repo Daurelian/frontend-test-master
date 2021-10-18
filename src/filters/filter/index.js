@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Filter({ dispatch }) {
+export default function Filter({ dispatch, filterNumber }) {
   return (
     <div className="col-3 filter">
       {/* Filtro */}
@@ -26,7 +26,7 @@ export default function Filter({ dispatch }) {
             }
           ></input>
           <span class="checkmark"></span>
-          <span>Disponibili</span> <span>(3)</span>
+          <span>Disponibili</span> <span>({filterNumber[0]?.disponibili})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -41,7 +41,7 @@ export default function Filter({ dispatch }) {
           ></input>
           <span class="checkmark"></span>
           <span>In promozione </span>
-          <span>(3)</span>
+          <span>({filterNumber[0]?.inSconto})</span>
         </div>
         <h5 class="filterTitle">MARCHE</h5>
         <div class="filterSubTitle container_filter">
@@ -57,7 +57,7 @@ export default function Filter({ dispatch }) {
           ></input>{" "}
           <span class="checkmark"></span>
           <span>Ariston</span>
-          <span>(3)</span>
+          <span>({filterNumber[1]?.brand.ariston})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -71,7 +71,7 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span>
-          <span>Baxi</span> <span>(3)</span>
+          <span>Baxi</span> <span>({filterNumber[1]?.brand.baxi})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -86,7 +86,7 @@ export default function Filter({ dispatch }) {
           ></input>{" "}
           <span class="checkmark"></span>
           <span>Ariston </span>
-          <span>(3)</span>
+          <span>({filterNumber[1]?.brand.ariston})</span>
         </div>
         <h5 class="filterTitle">TIPOLOGIA</h5>
         <div class="filterSubTitle container_filter">
@@ -101,7 +101,8 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span>
-          <span>A Condensazione</span> <span>(3)</span>
+          <span>A Condensazione</span>{" "}
+          <span>({filterNumber[2]?.tipologia.condensazione})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -115,7 +116,8 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span>
-          <span>Camera Aperta</span> <span>(3)</span>
+          <span>Camera Aperta</span>{" "}
+          <span>({filterNumber[2]?.tipologia.cameraAperta})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -129,7 +131,8 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span>
-          <span> Camera Stagna</span> <span>(3)</span>
+          <span> Camera Stagna</span>{" "}
+          <span>({filterNumber[2]?.tipologia.cameraStagna})</span>
         </div>
         <h5 class="filterTitle">ALIMENTAZIONE</h5>
         <div class="filterSubTitle container_filter">
@@ -144,7 +147,8 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span>
-          <span>Elettrica</span> <span>(3)</span>
+          <span>Elettrica</span>{" "}
+          <span>({filterNumber[3]?.alimentazione.elettrica})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -158,7 +162,7 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span> <span>Metano </span>
-          <span>(3)</span>
+          <span>({filterNumber[3]?.alimentazione.metano})</span>
         </div>
 
         <h5 class="filterTitle">POTENZA NOMINALE(kW)</h5>
@@ -175,7 +179,7 @@ export default function Filter({ dispatch }) {
           ></input>{" "}
           <span class="checkmark"></span>
           <span> 19.5 </span>
-          <span>(3)</span>{" "}
+          <span>({filterNumber[4]?.potenzaNominale.diciannove})</span>{" "}
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -189,7 +193,7 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span> <span>24 </span>
-          <span>(3)</span>
+          <span>({filterNumber[4]?.potenzaNominale.ventiquattro})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -203,7 +207,7 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span> <span>28 </span>
-          <span>(3)</span>
+          <span>({filterNumber[4]?.potenzaNominale.ventotto})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -217,7 +221,7 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span> <span>da 30 a 34 </span>
-          <span>(3)</span>
+          <span>({filterNumber[4]?.potenzaNominale.trenta})</span>
         </div>
         <h5 class="filterTitle">UTILIZZO</h5>
         <div class="filterSubTitle container_filter">
@@ -232,7 +236,7 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span> <span> Esterno </span>
-          <span>(3)</span>
+          <span>({filterNumber[5]?.utilizzo.esterno})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -246,7 +250,8 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span>
-          <span>Interno</span> <span>(3)</span>
+          <span>Interno</span>{" "}
+          <span>({filterNumber[5]?.utilizzo.interno})</span>
         </div>
         <div class="filterSubTitle container_filter">
           <input
@@ -260,7 +265,8 @@ export default function Filter({ dispatch }) {
             }
           ></input>{" "}
           <span class="checkmark"></span>
-          <span>Interno/Esterno</span> <span>(3)</span>
+          <span>Interno/Esterno</span>{" "}
+          <span>({filterNumber[5]?.utilizzo.internoEsterno})</span>
         </div>
         <h5 class="filterTitle">RECENSIONI</h5>
         <div class="footer-filter">
@@ -285,7 +291,7 @@ export default function Filter({ dispatch }) {
               <i class="fas fa-star star-filter darkPurple"></i>
               <i class="fas fa-star star-filter darkPurple"></i>
             </div>
-            <span>(3)</span>
+            <span>({filterNumber[6]?.stelle.cinque})</span>
           </div>
           <div class="star-distance container_filter">
             <div>
@@ -308,7 +314,7 @@ export default function Filter({ dispatch }) {
               <i class="fas fa-star star-filter darkPurple"></i>
               <i class="far fa-star star-filter darkPurple"></i>
             </div>
-            <span>(3)</span>
+            <span>({filterNumber[6]?.stelle.quattro})</span>
           </div>
           <div class="star-distance container_filter">
             <div>
@@ -331,7 +337,7 @@ export default function Filter({ dispatch }) {
               <i class="far fa-star star-filter darkPurple"></i>
               <i class="far fa-star star-filter darkPurple"></i>
             </div>
-            <span>(3)</span>
+            <span>({filterNumber[6]?.stelle.tre})</span>
           </div>
           <div class="star-distance container_filter">
             <div>
@@ -354,7 +360,7 @@ export default function Filter({ dispatch }) {
               <i class="far fa-star star-filter darkPurple"></i>
               <i class="far fa-star star-filter darkPurple"></i>
             </div>
-            <span>(3)</span>
+            <span>({filterNumber[6]?.stelle.due})</span>
           </div>
           <div class="star-distance">
             <div class="container_filter">
@@ -377,7 +383,7 @@ export default function Filter({ dispatch }) {
               <i class="far fa-star star-filter darkPurple"></i>
               <i class="far fa-star star-filter darkPurple"></i>
             </div>
-            <span>(3)</span>
+            <span>({filterNumber[6]?.stelle.una})</span>
           </div>
         </div>
       </div>

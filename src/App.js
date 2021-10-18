@@ -1,5 +1,5 @@
 import React, { useState, useReducer } from "react";
-import Filter from "./components/filter";
+import Filters from "./filters";
 import Cards from "./components/cards";
 import Footer from "./components/footer";
 import Banner from "./components/banner";
@@ -8,7 +8,7 @@ import Banner from "./components/banner";
 
 function App() {
   const [boiler, setBoiler] = useState([]);
-
+  const [filterNumber, setFilterNumber] = useState([]);
   const initialState = {
     id: boiler._id,
     product: [],
@@ -37,7 +37,6 @@ function App() {
     },
   };
   const [state, dispatch] = useReducer(reducer, initialState);
-
   function reducer(state, action) {
     switch (action.type) {
       case "toggle":
@@ -255,7 +254,11 @@ function App() {
         </h5>
       </div>
       <div className="row">
-        <Filter dispatch={dispatch} />
+        <Filters
+          filterNumber={filterNumber}
+          setFilterNumber={setFilterNumber}
+          dispatch={dispatch}
+        />
 
         <div className="col-9 product">
           <Cards

@@ -285,8 +285,8 @@
     },
     {
       "potenzaNominale": {
-        "diciannove": 0,
-        "ventiquattro": 10,
+        "diciannove": 1,
+        "ventiquattro": 9,
         "ventotto": 5,
         "trenta": 1
       }
@@ -301,10 +301,10 @@
     {
       "stelle": {
         "cinque": 3,
-        "quattro": 11,
+        "quattro": 10,
         "tre": 1,
         "due": 1,
-        "una": 0
+        "una": 1
       }
     }
   ]

@@ -175,13 +175,13 @@ export default function Cards({ boiler, setBoiler, state, dispatch }) {
   //     const response = await axios.get("http://localhost:9000/boilers");
   //     if (response.status === 200) {
   //       // console.log(response);
-  //       setBoiler(response.data.filter((e) => e.disponibile === state.filter));
+  //       setBoiler(response.data);
   //     }
   //   }
   //   fetchData();
   // }, [state.filter]);
 
-  // console.log("finale", state.product);
+  // console.log("prova", boiler);
   return (
     <div className="row">
       {/* Card */}
